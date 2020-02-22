@@ -8,8 +8,6 @@ RUN mv apache-tomcat-8.5.51/* /opt/tomcat/
 RUN yum install java -y
 RUN java -version
 WORKDIR /opt/tomcat/webapps
-RUN curl -O http://mirrors.jenkins.io/war-stable/latest/jenkins.war 
+RUN curl -O http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 EXPOSE 8080
 CMD [" /opt/tomcat/bin/catalina.sh","run"]
-
-
