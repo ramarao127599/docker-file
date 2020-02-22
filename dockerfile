@@ -3,7 +3,7 @@ MAINTAINER chinna127599@gmail.com
 RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 RUN curl -O http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
-RUN tar -xvf apache/* .tar.gz
+RUN tar -xvf apache/*.tar.gz
 RUN mv apache-tomcat-8.5.51/* /opt/tomcat/
 RUN yum install java -y
 RUN java -version
